@@ -142,10 +142,11 @@ ROWS = [
     (374, header_row("Contact", "- ")),
     (394, info_row("Email", "lightsmite83360@gmail.com")),
     (414, info_row("GitHub", "github.com/lightsmite")),
-    (454, header_row("GitHub Stats", "- ")),
-    (474, stats_row_repos()),
-    (494, stats_row_commits()),
-    (514, stats_row_loc()),
+    (434, info_row("Telegram", "t.me/fff31div")),
+    (474, header_row("GitHub Stats", "- ")),
+    (494, stats_row_repos()),
+    (514, stats_row_commits()),
+    (534, stats_row_loc()),
 ]
 
 # ---------------------------------------------------------------------------
@@ -183,7 +184,7 @@ def art_block():
         for i, runs in enumerate(rows)
     )
 
-HEIGHT = 514 + 26  # last info row y=514 + bottom padding = 540
+HEIGHT = 534 + 26  # last info row y=534 + bottom padding = 560
 
 TEMPLATE = """<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="{h}px" font-size="16px">
