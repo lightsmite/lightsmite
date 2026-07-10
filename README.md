@@ -6,3 +6,5 @@
 </a>
 
 <sub>Stats update daily via GitHub Actions. Design based on <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant</a>'s profile.</sub>
+
+<!-- profile readme -->
