@@ -30,7 +30,12 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: lightsmite
-        run: python today.py
+        run: |-
+          if [ -z "$ACCESS_TOKEN" ]; then
+            echo "::warning::ACCESS_TOKEN secret is not set — skipping stats update. Add a fine-grained PAT as the ACCESS_TOKEN repository secret."
+            exit 0
+          fi
+          python today.py
       - name: Commit
         run: |-
           git add .
